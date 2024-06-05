@@ -23,3 +23,12 @@ export const subscribeChat = (cb) => {
     cb(message);
   })
 }
+
+export const subscribeInitialChat = (cb) => {
+  if(!socket) return;
+
+  socket.on('message-list', (message) => {
+    console.log('Initial', message);
+    cb(message);
+  })
+}
