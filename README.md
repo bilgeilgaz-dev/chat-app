@@ -1,0 +1,3 @@
+- start backend
+- start the client in 2 different tabs
+- have a chat :)
